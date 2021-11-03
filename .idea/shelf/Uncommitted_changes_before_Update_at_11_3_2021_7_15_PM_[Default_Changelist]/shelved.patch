@@ -1,0 +1,18 @@
+Index: app/src/main/java/com/example/androidapp_todolist/MainActivity.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.example.androidapp_todolist;\r\n\r\nimport androidx.appcompat.app.AppCompatActivity;\r\n\r\nimport android.os.Bundle;\r\n\r\npublic class MainActivity extends AppCompatActivity {\r\n\r\n    @Override\r\n    protected void onCreate(Bundle savedInstanceState) {\r\n        super.onCreate(savedInstanceState);\r\n        setContentView(R.layout.activity_main);\r\n    }\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/com/example/androidapp_todolist/MainActivity.java b/app/src/main/java/com/example/androidapp_todolist/MainActivity.java
+--- a/app/src/main/java/com/example/androidapp_todolist/MainActivity.java	(revision ccdf694943b74e1508854757fdf21addfbdfa1a4)
++++ b/app/src/main/java/com/example/androidapp_todolist/MainActivity.java	(date 1635980924671)
+@@ -1,6 +1,7 @@
+ package com.example.androidapp_todolist;
+ 
+ import androidx.appcompat.app.AppCompatActivity;
++import androidx.appcompat.widget.Toolbar;
+ 
+ import android.os.Bundle;
+ 

@@ -4,54 +4,63 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#E9E4F1"
+    android:background="#FDFCDC"
+    android:contextClickable="true"
     tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="250dp"
-        android:layout_height="245dp"
-        android:background="#003AD8C9"
+        android:layout_width="292dp"
+        android:layout_height="258dp"
+        android:background="#00AFB9"
         android:fontFamily="sans-serif-condensed"
         android:text="To Do List"
+        android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Display4"
-        android:textColor="#090808"
-        android:textSize="24sp"
+        android:textColor="#0081A7"
+        android:textSize="38sp"
         app:autoSizeTextType="uniform"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.583"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.687" />
+        app:layout_constraintVertical_bias="0.53" />
 
     <Button
         android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="#fff"
+        android:layout_width="196dp"
+        android:layout_height="56dp"
+        android:background="#FED9B7"
+        android:clickable="true"
         android:radius="15dp"
         android:text="Login/Register"
-        android:textColor="#000000"
+        android:textColor="#0081A7"
+        android:textSize="16sp"
         app:backgroundTint="#fff"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.541"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:layout_constraintVertical_bias="0.25" />
+        app:layout_constraintVertical_bias="0.396" />
 
     <ImageView
-        android:layout_width="303dp"
-        android:layout_height="518dp"
+        android:layout_width="141dp"
+        android:layout_height="125dp"
+        android:background="#FED9B7"
+        android:foreground="@drawable/ic_baseline_fact_check_24"
+        android:foregroundTint="#F07167"
+        android:foregroundTintMode="src_in"
         android:src="@drawable/calendar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintHorizontal_bias="0.531"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.116" />
+        app:layout_constraintVertical_bias="0.106"
+        app:srcCompat="@drawable/ic_baseline_fact_check_24"
+        tools:srcCompat="@drawable/ic_baseline_fact_check_24" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

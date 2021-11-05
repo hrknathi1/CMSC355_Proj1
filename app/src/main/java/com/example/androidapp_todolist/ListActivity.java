@@ -24,39 +24,28 @@ public class ListActivity extends AppCompatActivity
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
-
-
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list);
 
         listView = findViewById(R.id.listView);
         addButton = findViewById(R.id.addButton);
 
-
         addButton.setOnClickListener(new View.OnClickListener()
         {
             @Override
             public void onClick(View v)
             {
-
                 addItem(v);
-
             }
         });
-
         data = new ArrayList<>();
         dataAdapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, data);
         listView.setAdapter(dataAdapter);
         setListViewListener();
-
-
-
-
     }
 
     private void setListViewListener()
     {
-
         listView.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener()
         {
             @Override
@@ -70,10 +59,7 @@ public class ListActivity extends AppCompatActivity
                 return false;
             }
         });
-
-
     }
-
 
     private void addItem(View v)
     {
@@ -84,15 +70,12 @@ public class ListActivity extends AppCompatActivity
         {
             dataAdapter.add(itemText);
             input.setText("");
-
         }
         else
             {
                 Toast.makeText(getApplicationContext(), "Please Insert Item",Toast.LENGTH_LONG).show();
             }
-
     }
-
 
 }
 

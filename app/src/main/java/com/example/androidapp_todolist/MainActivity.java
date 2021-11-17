@@ -9,9 +9,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+// Main Activity is splash screen
 public class   MainActivity extends AppCompatActivity {
     private Button button;
-
     Timer timer;
 
     @Override
@@ -19,7 +19,7 @@ public class   MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // added below to allow 5 seconds for splashscreen timer
+        // added below to allow 5 seconds for splashscreen to show, then it moves to the next screen
         timer = new Timer();
         timer.schedule(new TimerTask() {
             @Override
@@ -30,14 +30,15 @@ public class   MainActivity extends AppCompatActivity {
             }
         }, 5000);
 
-        // added below to add functionality to add button
-        button = (Button) findViewById(R.id.button);
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-            }
-        });
+        // Removing below code to see if it is needed
+//        // added below to add functionality to add button
+//        button = (Button) findViewById(R.id.button);
+//        button.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//
+//            }
+//        });
     }
 
     // added below - this should open a new activity, but may need to correct name of activity (and should update method name)

@@ -9,7 +9,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-// Main Activity is splash screen
+// Main Activity is the first screen app opens/lauches from - splash screen, 5 sec timer, then loads next screen (eventually login/create accct screen)
 public class   MainActivity extends AppCompatActivity {
     private Button button;
     Timer timer;
@@ -24,26 +24,17 @@ public class   MainActivity extends AppCompatActivity {
         timer.schedule(new TimerTask() {
             @Override
             public void run() {
-                Intent intent = new Intent(MainActivity.this, ListActivity.class);
+                Intent intent = new Intent(MainActivity.this, BasicListTemp.class);
                 startActivity(intent);
                 finish();
             }
         }, 5000);
 
-        // Removing below code to see if it is needed
-//        // added below to add functionality to add button
-//        button = (Button) findViewById(R.id.button);
-//        button.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//
-//            }
-//        });
     }
 
-    // added below - this should open a new activity, but may need to correct name of activity (and should update method name)
+    // added below - this should open a new activity, but may need to correct name of activity (and should update method name/origin of that name)
     public void openActivity2() {
-        Intent intent = new Intent(this, ListActivity.class);
+        Intent intent = new Intent(this, BasicListTemp.class);
         startActivity(intent);
     }
 }

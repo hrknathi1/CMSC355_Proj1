@@ -7,6 +7,8 @@
     android:background="#FDFCDC"
     tools:context=".HomeActivity">
 
+    <!--Remove this file once done with nav bar !!!!-->
+
     <!--To Do Lists-->
     <Button
         android:id="@+id/button4"

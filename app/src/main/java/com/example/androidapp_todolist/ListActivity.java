@@ -44,6 +44,7 @@ public class ListActivity extends AppCompatActivity
         setListViewListener();
     }
 
+    // AndroidStudio auto added below?
     private void setListViewListener()
     {
         listView.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener()
@@ -65,6 +66,7 @@ public class ListActivity extends AppCompatActivity
     {
         EditText input = findViewById(R.id.addText);
         String itemText = input.getText().toString();
+
 
         if(!(itemText.equals("")))
         {

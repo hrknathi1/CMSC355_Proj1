@@ -21,16 +21,17 @@
             android:id="@+id/mytextview"
             android:layout_width="match_parent"
             android:layout_height="41dp"
+            android:background="#0091A7"
             android:text="@string/title_item_add"
-            android:textAlignment="textStart"
-            android:textSize="20sp"
+            android:textAlignment="center"
             android:textColor="#FFFFFF"
+            android:textSize="20sp"
             android:textStyle="bold" />
 
         <EditText
             android:id="@+id/userAddsItem"
             android:layout_width="match_parent"
-            android:layout_height="72dp"
+            android:layout_height="58dp"
             android:background="#FFFFFF"
             android:ems="10"
             android:hint="@string/title_hint_i_need_to_remember"
@@ -39,9 +40,9 @@
 
         <Button
             android:id="@+id/addItemButton"
-            android:layout_width="wrap_content"
+            android:layout_width="108dp"
             android:layout_height="wrap_content"
-            android:background="#FF5722"
+            android:background="#F07000"
             android:text="@string/title_add"
             android:textColor="#FFFFFF"
             android:textSize="18sp"

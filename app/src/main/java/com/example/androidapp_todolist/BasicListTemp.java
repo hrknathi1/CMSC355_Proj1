@@ -48,12 +48,18 @@ public class BasicListTemp extends AppCompatActivity {
         // added below - testing to see if initialization of arrayadapter is the problem
 //        ArrayAdapter<String> itemAdapter = new ArrayAdapter<String>(this, R.layout.activity_basic_list_temp, R.id.textView, Collections.singletonList(userAddedItem));
       //  ArrayAdapter<String> itemAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, android.R.id.text1, (List<String>) userAddsItem);
-      //  TextView mytextview = null;
-    //    context = this;
+
+        // added below - Will probably need to figure out how to get this to work:
+        //  https://www.tutorialspoint.com/android/android_list_view.htm
+        //  ArrayAdapter adapter = new ArrayAdapter<String>(this,R.layout.ListView,StringArray);
+
+
 
         // added below - following steps from youtube video regarding null pointer exception error [MAY NOT NEED THIS]
     //    mytextview = (TextView)findViewById(R.id.mytextview);
     //    mytextview.setText("Kass TESTING BasicListTemp.Java");
+        //  TextView mytextview = null;
+        //    context = this;
 
         // added below
         ArrayList<String> listItems = new ArrayList<String>();

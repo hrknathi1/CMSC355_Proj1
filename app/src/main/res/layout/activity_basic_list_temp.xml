@@ -18,12 +18,13 @@
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/addItem"
+            android:id="@+id/mytextview"
             android:layout_width="match_parent"
             android:layout_height="41dp"
             android:text="@string/title_item_add"
             android:textAlignment="textStart"
             android:textSize="20sp"
+            android:textColor="#FFFFFF"
             android:textStyle="bold" />
 
         <EditText

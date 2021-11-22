@@ -2,11 +2,15 @@ package com.example.androidapp_todolist;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
+import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
@@ -31,7 +35,11 @@ public class BasicListTemp extends AppCompatActivity {
     ArrayList<String> listItems;
     ArrayAdapter<String> itemAdapter;
 
+    // added below - necessary for array adapter ?
+    private Context context;
 
+
+   // @SuppressLint("SetTextI18n")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -40,16 +48,24 @@ public class BasicListTemp extends AppCompatActivity {
         // added below - testing to see if initialization of arrayadapter is the problem
 //        ArrayAdapter<String> itemAdapter = new ArrayAdapter<String>(this, R.layout.activity_basic_list_temp, R.id.textView, Collections.singletonList(userAddedItem));
       //  ArrayAdapter<String> itemAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, android.R.id.text1, (List<String>) userAddsItem);
+      //  TextView mytextview = null;
+    //    context = this;
+
+        // added below - following steps from youtube video regarding null pointer exception error [MAY NOT NEED THIS]
+    //    mytextview = (TextView)findViewById(R.id.mytextview);
+    //    mytextview.setText("Kass TESTING BasicListTemp.Java");
 
         // added below
         ArrayList<String> listItems = new ArrayList<String>();
+        // ArrayAdapter<String> itemAdapter = new ArrayAdapter<String>(getApplicationContext(), android.R.layout.simple_list_item_1, android.R.id.text1, (List<String>) userAddsItem);
         ArrayAdapter<String> itemAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, android.R.id.text1, (List<String>) userAddsItem);
 
         userAddsItem = (EditText) findViewById(R.id.userAddsItem);
-
         addItemButton = (Button) findViewById(R.id.addItemButton);
+
         // button functionality
         addItemButton.setOnClickListener(new View.OnClickListener() {
+
             @Override  // I believe this determines 'what' (aka the text entry box) the "add" button click reacts to
             public void onClick(View v) {
                 userAddedItem = userAddsItem.getText().toString();
@@ -58,8 +74,9 @@ public class BasicListTemp extends AppCompatActivity {
                 if(!(userAddedItem.equals("")))
                 {
                     // SOMETHING WRONG IS HAPPENING IN THE BELOW LINE...SOMETHING ABOUT INSTANTIATING IT
-                    itemAdapter.add(userAddedItem);
+                  //  itemAdapter.add(userAddedItem);
                     listItems.add(userAddedItem);
+                    itemAdapter.notifyDataSetChanged();
                     userAddsItem.setText("");
                 }
                 // if user does not add anything, provide message to user to enter item
@@ -74,8 +91,14 @@ public class BasicListTemp extends AppCompatActivity {
         });
     }
 
+    // added below - TEMPORARY.... method to add items
+    public void addItems(View v) {
+        itemAdapter.add(userAddedItem);
+    }
+
         private void showToast(String text) {
             Toast.makeText(BasicListTemp.this, text, Toast.LENGTH_SHORT).show();
+
         }
 
 }

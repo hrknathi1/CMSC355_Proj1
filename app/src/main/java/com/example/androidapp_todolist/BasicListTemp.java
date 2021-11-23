@@ -20,6 +20,7 @@ public class BasicListTemp extends AppCompatActivity {
     // variables for basic list temp activity (aka: adding items, accepting user input, submit button)
     // where we will store the info collected
     String userAddedItem = "";
+    String userEditedItem= "";
 
     // fields that user inputs into
     EditText userAddsItem;
@@ -77,5 +78,5 @@ public class BasicListTemp extends AppCompatActivity {
         private void showToast(String text) {
             Toast.makeText(BasicListTemp.this, text, Toast.LENGTH_SHORT).show();
         }
-
+//need to be able to make edit after adding aswell in this
 }

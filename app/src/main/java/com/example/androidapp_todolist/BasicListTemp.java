@@ -20,6 +20,7 @@ public class BasicListTemp extends AppCompatActivity {
     // variables for basic list temp activity (aka: adding items, accepting user input, submit button)
     // where we will store the info collected
     String userAddedItem = "";
+    String userEditedItem= "";
 
     // fields that user inputs into
     EditText userAddsItem;

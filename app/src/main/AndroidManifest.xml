@@ -3,14 +3,17 @@
     package="com.example.androidapp_todolist">
 
     <application
-        android:usesCleartextTraffic="true"
         android:allowBackup="true"
         android:fullBackupContent="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.AndroidAppToDoList">
+        android:theme="@style/Theme.AndroidAppToDoList"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".ListView"
+            android:exported="true" />
         <activity
             android:name=".BasicListTemp"
             android:exported="true" />

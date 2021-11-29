@@ -2,7 +2,6 @@ package com.example.androidapp_todolist;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,11 +9,9 @@ import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
 // class that allows a user to add an item to a list
@@ -24,7 +21,8 @@ public class BasicListTemp extends AppCompatActivity {
     // variables for basic list temp activity (aka: adding items, accepting user input, submit button)
     // where we will store the info collected
     String userAddedItem = "";
-    String userEditedItem= "";
+    String userEditedItem = "";
+    ArrayList<String> itemsInList;
 
     // fields that user inputs into
     EditText userAddsItem;
@@ -35,6 +33,8 @@ public class BasicListTemp extends AppCompatActivity {
     // arrays used to store user list entries
     ArrayList<String> listItems;
     ArrayAdapter<String> itemAdapter;
+    private String[] StringArray;
+  //  ArrayAdapter adapter = new ArrayAdapter<String>(this,R.layout.activity_list_view,R.id.textView,StringArray);
 
     // added below - necessary for array adapter ?
     private Context context;
@@ -83,6 +83,7 @@ public class BasicListTemp extends AppCompatActivity {
                     // SOMETHING WRONG IS HAPPENING IN THE BELOW LINE...SOMETHING ABOUT INSTANTIATING IT
                   //  itemAdapter.add(userAddedItem);
                     listItems.add(userAddedItem);
+                  //  itemAdapter.add(userAddedItem);
                     itemAdapter.notifyDataSetChanged();
                     userAddsItem.setText("");
                 }
@@ -94,6 +95,8 @@ public class BasicListTemp extends AppCompatActivity {
                 showToast(userAddedItem);
                 // added below to print items in list for testing
                 System.out.println(listItems);
+                itemsInList = listItems;
+                openList();
             }
         });
     }
@@ -101,11 +104,21 @@ public class BasicListTemp extends AppCompatActivity {
     // added below - TEMPORARY.... method to add items
     public void addItems(View v) {
         itemAdapter.add(userAddedItem);
+
     }
 
         private void showToast(String text) {
             Toast.makeText(BasicListTemp.this, text, Toast.LENGTH_SHORT).show();
 
         }
+
+
 //need to be able to make edit after adding aswell in this
+
+    // added below - this should open a new activity, but may need to correct name of activity (and should update method name/origin of that name)
+    public void openList() {
+        Intent intent = new Intent(this, ListView.class);
+        startActivity(intent);
+    }
+
 }

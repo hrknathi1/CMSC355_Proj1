@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
 import android.content.Intent;
+import android.icu.text.DisplayContext;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
@@ -12,6 +13,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 // class that allows a user to add an item to a list
@@ -22,11 +24,11 @@ public class BasicListTemp extends AppCompatActivity {
     // where we will store the info collected
     String userAddedItem = "";
     String userEditedItem = "";
-    ArrayList<String> itemsInList;
+    public ArrayList<String> itemsInList;
+    String simpleListView;
 
     // fields that user inputs into
     EditText userAddsItem;
-
     // add item button
     Button addItemButton;
 
@@ -34,11 +36,10 @@ public class BasicListTemp extends AppCompatActivity {
     ArrayList<String> listItems;
     ArrayAdapter<String> itemAdapter;
     private String[] StringArray;
-  //  ArrayAdapter adapter = new ArrayAdapter<String>(this,R.layout.activity_list_view,R.id.textView,StringArray);
+    // ArrayAdapter adapter = new ArrayAdapter<String>(this,R.layout.activity_list_view,R.id.textView,StringArray);
 
     // added below - necessary for array adapter ?
     private Context context;
-
 
    // @SuppressLint("SetTextI18n")
     @Override
@@ -53,7 +54,6 @@ public class BasicListTemp extends AppCompatActivity {
         // added below - Will probably need to figure out how to get this to work:
         //  https://www.tutorialspoint.com/android/android_list_view.htm
         //  ArrayAdapter adapter = new ArrayAdapter<String>(this,R.layout.ListView,StringArray);
-
 
 
         // added below - following steps from youtube video regarding null pointer exception error [MAY NOT NEED THIS]
@@ -96,9 +96,18 @@ public class BasicListTemp extends AppCompatActivity {
                 // added below to print items in list for testing
                 System.out.println(listItems);
                 itemsInList = listItems;
+
+//                // added below - testing, may need to delete
+//                for (Iterator<String> i = listItems.iterator(); i.hasNext();) {
+//                   simpleListView = i.next();
+//                }
                 openList();
             }
         });
+    }
+
+    public ArrayList<String> getItemsInList() {
+        return itemsInList;
     }
 
     // added below - TEMPORARY.... method to add items
@@ -119,6 +128,9 @@ public class BasicListTemp extends AppCompatActivity {
     public void openList() {
         Intent intent = new Intent(this, ListView.class);
         startActivity(intent);
-    }
+        // added below - it's not working
+        getItemsInList();
+
+        }
 
 }

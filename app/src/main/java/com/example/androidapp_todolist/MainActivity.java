@@ -2,18 +2,22 @@ package com.example.androidapp_todolist;
 
 import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
+
+import java.util.ArrayList;
 import java.util.Timer;
 import java.util.TimerTask;
-
 import android.content.Intent;
-import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 
 // Main Activity is the first screen app opens/lauches from - splash screen, 5 sec timer, then loads next screen (eventually login/create accct screen)
 public class   MainActivity extends AppCompatActivity {
     private Button button;
     Timer timer;
+    EditText inputText;
+    ListView listView;
+    ArrayList<String> list;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

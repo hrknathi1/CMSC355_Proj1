@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -9,15 +12,24 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
         android:id="@+id/textView"
         android:layout_width="292dp"
         android:layout_height="258dp"
-        android:background="#00AFB9"
+        android:background="#00afb9"
         android:fontFamily="sans-serif-condensed"
-        android:text="To Do List"
+        android:text="List-it All"
         android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Display4"
-        android:textColor="#0081A7"
+        android:textColor="#012320"
         android:textSize="38sp"
         app:autoSizeTextType="uniform"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -31,8 +43,8 @@
 
     <Button
         android:id="@+id/button"
-        android:layout_width="196dp"
-        android:layout_height="56dp"
+        android:layout_width="204dp"
+        android:layout_height="66dp"
         android:background="#FED9B7"
         android:clickable="true"
         android:radius="15dp"
@@ -50,8 +62,7 @@
         android:layout_width="141dp"
         android:layout_height="125dp"
         android:background="#FED9B7"
-        android:foreground="@drawable/ic_baseline_fact_check_24"
-        android:foregroundTint="#F07167"
+        android:foreground="@drawable/todolistappicon"
         android:foregroundTintMode="src_in"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

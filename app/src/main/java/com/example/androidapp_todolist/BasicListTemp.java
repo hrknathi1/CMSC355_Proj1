@@ -111,6 +111,11 @@ public class BasicListTemp extends AppCompatActivity {
 
                 String text = inputText.getText().toString();
                 list.add(text);
+
+
+               // simpleListView = itemsInList.get(0);
+
+
 //                ArrayAdapter adapter = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,list);
                 //   ArrayAdapter adapter = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1, list);
                 // ListView listView = null;
@@ -171,8 +176,13 @@ public class BasicListTemp extends AppCompatActivity {
 
     // added below - this should open a new activity, but may need to correct name of activity (and should update method name/origin of that name)
     public void openList() {
+//        Intent intent = new Intent(this, ListView.class);
+//        startActivity(intent);
+
         Intent intent = new Intent(this, ListView.class);
+        intent.putStringArrayListExtra("key",itemsInList);
         startActivity(intent);
+
         // added below - it's not working
         getItemsInList();
         getUserAddedItem();

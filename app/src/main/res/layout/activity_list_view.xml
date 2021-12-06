@@ -9,14 +9,14 @@
 
     <TextView
         android:id="@+id/txtView"
-        android:layout_width="match_parent"
+        android:layout_width="341dp"
         android:layout_height="117dp"
         android:text="TextView" />
 
     <ScrollView
         android:id="@+id/testDisplay"
-        android:layout_width="285dp"
-        android:layout_height="match_parent"
+        android:layout_width="201dp"
+        android:layout_height="189dp"
         android:visibility="visible">
 
         <LinearLayout
@@ -27,12 +27,13 @@
 
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="235dp">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/plainText"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="hint" />
+            android:layout_height="123dp"
+            android:hint="why hello there!" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <ListView

@@ -15,21 +15,43 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationView;
 
 public class   MainActivity extends AppCompatActivity {
-    private BottomNavigationView bottomNavigationView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        bottomNavigationView = findViewById(R.id.bottom_navigation);
+        BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
         bottomNavigationView.setOnNavigationItemSelectedListener(bottomNavMethod);
+
+        getSupportFragmentManager().beginTransaction().replace(R.id.fl_wrapper, new HomeFragment()).commit();
     }
 
-    private BottomNavigationView.OnNavigationItemSelectedListener bottomNavMethod = new NavigationView.OnNavigationItemSelectedListener() {
+    private BottomNavigationView.OnNavigationItemSelectedListener bottomNavMethod = new BottomNavigationView.OnNavigationItemSelectedListener() {
         @Override
         public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-            return false;
+                // get the selected fragment by id
+                Fragment selectedFragment = null;
+                switch (item.getItemId()) {
+                    case R.id.ic_home:
+                        selectedFragment = new HomeFragment();
+                        break;
+                    case R.id.ic_appointments:
+                        selectedFragment = new AppointmentsFragment();
+                        break;
+                    case R.id.ic_list:
+                        selectedFragment = new ListsFragment();
+                        break;
+                    case R.id.ic_medications:
+                        selectedFragment = new MedicationsFragment();
+                        break;
+                }
+                // replacing one fragment with another fragment
+                getSupportFragmentManager()
+                        .beginTransaction()
+                        .replace(R.id.fl_wrapper, selectedFragment)
+                        .commit();
+                return true;
         }
 
 
@@ -59,5 +81,7 @@ public class   MainActivity extends AppCompatActivity {
         }
     }
          */
+
+    };
 
 }

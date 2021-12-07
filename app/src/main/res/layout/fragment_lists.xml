@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--Lists Main Page containing Created Lists-->
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -20,6 +21,6 @@
         android:elevation="10dp"
         android:radius="2dp"
         android:text="+"
-        android:textSize="50dp" />
+        android:textSize="50sp" />
 
 </FrameLayout>

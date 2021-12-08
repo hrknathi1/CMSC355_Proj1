@@ -3,8 +3,6 @@ package com.example.androidapp_todolist;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
-import android.content.Intent;
-import android.icu.text.DisplayContext;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ListView;
@@ -14,7 +12,6 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.List;
 import java.util.Timer;
 
@@ -39,9 +36,14 @@ public class BasicListTemp extends AppCompatActivity {
     ArrayList<String> list;
     ListView listView;
     TextView txtView;
+    TextView txt2View;
+
 
     // arrays used to store user list entries
     ArrayList<String> listItems;
+
+    String myList = "This is my list";
+
     ArrayAdapter<String> itemAdapter;
     private String[] StringArray;
     // ArrayAdapter adapter = new ArrayAdapter<String>(this,R.layout.activity_list_view,R.id.textView,StringArray);
@@ -76,11 +78,9 @@ public class BasicListTemp extends AppCompatActivity {
         //  TextView mytextview = null;
         //    context = this;
 
-        String myList = "This is my list";
-
         // added below
         ArrayList<String> listItems = new ArrayList<String>();
-//        listItems.add(String myList);
+ //       listItems.add(String myList);
         // ArrayAdapter<String> itemAdapter = new ArrayAdapter<String>(getApplicationContext(), android.R.layout.simple_list_item_1, android.R.id.text1, (List<String>) userAddsItem);
         ArrayAdapter<String> itemAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, android.R.id.text1, (List<String>) userAddsItem);
 
@@ -92,6 +92,7 @@ public class BasicListTemp extends AppCompatActivity {
 
             @Override  // I believe this determines 'what' (aka the text entry box) the "add" button click reacts to
             public void onClick(View v) {
+                listItems.add(myList);
                 userAddedItem = userAddsItem.getText().toString();
 
                 // if user enters something, add it
@@ -114,11 +115,7 @@ public class BasicListTemp extends AppCompatActivity {
                 // added below to print items in list for testing
                 System.out.println(listItems);
                 itemsInList = listItems;
-
-
-                //Printing string array list values on screen.
-                for(int i=0; i < listItems.size(); i++){ txtView.setText(txtView.getText() + listItems.get(i) + " , ");
-
+                displayItems();
 
 //                    for(int item = 0; item < listItems.size(); item ++){
 //                    if(listItems[item].size() >= 1){
@@ -128,6 +125,22 @@ public class BasicListTemp extends AppCompatActivity {
 //                    }
                 }
 
+
+            public void displayItems() {
+                //Printing string array list values on screen.
+//                for(int i=0; i < listItems.size(); i++){
+//                    txtView.setText(txtView.getText() + listItems.get(i) + "/n");
+//                }
+//                txt2View.findViewById(textView2);
+                for(int i=0; i < listItems.size(); i++) {
+//                    txt2View.setText(txt2View.getText() + listItems.get(i) + "/n");
+                    String displayTxt = listItems.get(i) + "n/";
+                    txt2View.findViewById(R.id.textView2);
+                    // simpleListView.addTouchables(itemsInList);
+                }
+                ListView simpleListView;
+
+                }
 
 
                // simpleListView = itemsInList.get(0);
@@ -143,15 +156,15 @@ public class BasicListTemp extends AppCompatActivity {
 //                for (Iterator<String> i = listItems.iterator(); i.hasNext();) {
 //                   simpleListView = i.next();
 //                }
-                getItemsInList();
-                getUserAddedItem();
+//                getItemsInList();
+//                getUserAddedItem();
 
                // simpleListView = getUserAddedItem();
                         // getDisplay().toString()getUserAddedItem();
 
                // Calling open list method will pull up new screen (where, theoretically, items in list will be dsiplay... working on alt, to display on same add screen)
               // openList();
-            }
+           // }
 
 //            // added below method for something trying to display items user enters
 //            public void onClickAdd(View view) {
@@ -189,14 +202,6 @@ public class BasicListTemp extends AppCompatActivity {
 
         }
 
-//need to be able to make edit after adding aswell in this
-
-//    // added below to try to test new screen load
-//        public void run() {
-//            Intent intent = new Intent(BasicListTemp.this, ListView.class);
-//            startActivity(intent);
-//            finish();
-//        }
 
     // added below - this should open a new activity, but may need to correct name of activity (and should update method name/origin of that name)
     public void openList() {

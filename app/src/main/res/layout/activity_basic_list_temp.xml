@@ -47,8 +47,8 @@
             android:layout_width="108dp"
             android:layout_height="wrap_content"
             android:background="#F07000"
-            android:text="@string/title_add"
             android:onClick="onClickAdd"
+            android:text="@string/title_add"
             android:textColor="#FFFFFF"
             android:textSize="18sp"
             android:textStyle="bold"
@@ -56,10 +56,20 @@
 
         <!--Divider code in ListView-->
 
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="92dp"
+            android:text="My List:  "
+            android:textColor="#1C1D1E"
+            android:textSize="20sp"
+            android:visibility="visible"
+            tools:visibility="visible" />
+
         <ListView
             android:id="@+id/simpleListView"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="50dp"
             android:layout_marginStart="0dp"
             android:layout_marginTop="107dp" />
 

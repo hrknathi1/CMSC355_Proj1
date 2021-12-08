@@ -25,7 +25,7 @@ public class ListView extends AppCompatActivity {
     ArrayList<String> lister;
 
     // added below - trying this
-    ArrayList<String> list = getIntent().getStringArrayListExtra("key");
+//    ArrayList<String> list = getIntent().getStringArrayListExtra("key");
 
     // arrays used to store user lister entries
     ArrayList<String> listItems;

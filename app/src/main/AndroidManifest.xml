@@ -12,13 +12,13 @@
         android:theme="@style/Theme.AndroidAppToDoList"
         android:usesCleartextTraffic="true">
         <activity
-            android:name=".ListView"
-            android:exported="true" />
-        <activity
             android:name=".BasicListTemp"
             android:exported="true" />
         <activity
             android:name=".ListActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ListView"
             android:exported="true" />
         <activity
             android:name=".MainActivity"

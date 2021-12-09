@@ -3,7 +3,6 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-
         <entry key="..\:/Users/Brianna/AndroidStudioProjects/CMSC355_Proj1/app/src/main/res/drawable/ic_baseline_home_24.xml" value="0.1" />
         <entry key="..\:/Users/Brianna/AndroidStudioProjects/CMSC355_Proj1/app/src/main/res/drawable/ic_baseline_list_24.xml" value="0.18125" />
         <entry key="..\:/Users/Brianna/AndroidStudioProjects/CMSC355_Proj1/app/src/main/res/layout-w1240dp/activity_login.xml" value="0.103125" />
@@ -13,24 +12,10 @@
         <entry key="..\:/Users/Brianna/AndroidStudioProjects/CMSC355_Proj1/app/src/main/res/layout/activity_main.xml" value="0.16666666666666666" />
         <entry key="..\:/Users/Brianna/AndroidStudioProjects/CMSC355_Proj1/app/src/main/res/layout/activity_mylists.xml" value="0.16666666666666666" />
         <entry key="..\:/Users/Brianna/AndroidStudioProjects/CMSC355_Proj1/app/src/main/res/layout/fragment_appointments.xml" value="0.1" />
-        <entry key="..\:/Users/Brianna/AndroidStudioProjects/CMSC355_Proj1/app/src/main/res/layout/fragment_home.xml" value="0.1598731884057971" />
-        <entry key="..\:/Users/Brianna/AndroidStudioProjects/CMSC355_Proj1/app/src/main/res/layout/fragment_lists.xml" value="0.16666666666666666" />
+        <entry key="..\:/Users/Brianna/AndroidStudioProjects/CMSC355_Proj1/app/src/main/res/layout/fragment_home.xml" value="0.16666666666666666" />
+        <entry key="..\:/Users/Brianna/AndroidStudioProjects/CMSC355_Proj1/app/src/main/res/layout/fragment_lists.xml" value="0.25" />
         <entry key="..\:/Users/Brianna/AndroidStudioProjects/CMSC355_Proj1/app/src/main/res/layout/fragment_medications.xml" value="0.1" />
         <entry key="..\:/Users/Brianna/AndroidStudioProjects/CMSC355_Proj1/app/src/main/res/menu/nav_menu.xml" value="0.22333333333333336" />
-
-        <entry key="..\:/Users/hrkna/StudioProjects/CMSC355_Proj1/app/src/main/res/layout/activity_login.xml" value="0.11775362318840579" />
-        <entry key="..\:/Users/hrkna/StudioProjects/CMSC355_Proj1/app/src/main/res/layout/activity_main.xml" value="0.11775362318840579" />
-        <entry key="..\:/Users/kfays/AndroidStudioProjects/CMSC355_Proj1/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.15572916666666667" />
-        <entry key="..\:/Users/kfays/AndroidStudioProjects/CMSC355_Proj1/app/src/main/res/drawable/ic_launcher_background.xml" value="0.15572916666666667" />
-        <entry key="..\:/Users/kfays/AndroidStudioProjects/CMSC355_Proj1/app/src/main/res/layout-w936dp/activity_login.xml" value="0.1" />
-        <entry key="..\:/Users/kfays/AndroidStudioProjects/CMSC355_Proj1/app/src/main/res/layout-w936dp/activity_login_screen.xml" value="0.1" />
-        <entry key="..\:/Users/kfays/AndroidStudioProjects/CMSC355_Proj1/app/src/main/res/layout/activity_add_item_to_list.xml" value="0.1" />
-        <entry key="..\:/Users/kfays/AndroidStudioProjects/CMSC355_Proj1/app/src/main/res/layout/activity_basic_list_temp.xml" value="0.264" />
-        <entry key="..\:/Users/kfays/AndroidStudioProjects/CMSC355_Proj1/app/src/main/res/layout/activity_list.xml" value="0.264" />
-        <entry key="..\:/Users/kfays/AndroidStudioProjects/CMSC355_Proj1/app/src/main/res/layout/activity_login.xml" value="0.128" />
-        <entry key="..\:/Users/kfays/AndroidStudioProjects/CMSC355_Proj1/app/src/main/res/layout/activity_login_screen.xml" value="0.1" />
-        <entry key="..\:/Users/kfays/AndroidStudioProjects/CMSC355_Proj1/app/src/main/res/layout/activity_main.xml" value="0.10216277746158224" />
-
       </map>
     </option>
   </component>

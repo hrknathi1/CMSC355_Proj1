@@ -15,8 +15,6 @@
             android:name=".MylistsActivity"
             android:exported="true" />
         <activity
-            android:name=".ListActivity"
-            android:exported="false" />
             android:name=".BasicListTemp"
             android:exported="true" />
 

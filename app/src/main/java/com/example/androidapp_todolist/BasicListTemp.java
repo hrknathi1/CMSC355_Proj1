@@ -100,6 +100,9 @@ public class BasicListTemp extends AppCompatActivity {
                 // added below to print items in list for testing
                 System.out.println(listItems);
                 itemsInList = listItems;
+
+                txtView.setText((CharSequence) simpleListView);
+
                // displayItems();
 
 //                    for(int item = 0; item < listItems.size(); item ++){

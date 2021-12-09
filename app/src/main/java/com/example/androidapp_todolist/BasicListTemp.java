@@ -126,9 +126,7 @@ public class BasicListTemp extends AppCompatActivity {
                    // txt2View = displayTxt;
                 }
                 ListView simpleListView;
-
                 }
-
         });
         // run();
     }

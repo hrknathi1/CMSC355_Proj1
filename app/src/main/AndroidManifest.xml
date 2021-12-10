@@ -30,6 +30,9 @@
             android:name=".ListView"
             android:exported="true" />
         <activity
+            android:name=".HomeActivity"
+            android:exported="true" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

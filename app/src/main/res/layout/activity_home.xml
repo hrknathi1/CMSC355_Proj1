@@ -10,12 +10,13 @@
     <!--Remove this file once done with nav bar !!!!-->
 
     <!--To Do Lists-->
+
     <Button
         android:id="@+id/button4"
         android:layout_width="200dp"
         android:layout_height="100dp"
         android:layout_marginStart="100dp"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="80dp"
         android:layout_marginEnd="100dp"
         android:layout_marginBottom="20dp"
         android:elevation="10dp"
@@ -31,6 +32,8 @@
         tools:ignore="SpeakableTextPresentCheck" />
 
     <!--Medications-->
+
+    <!--Appointments-->
     <Button
         android:id="@+id/button2"
         android:layout_width="200dp"
@@ -38,7 +41,7 @@
         android:layout_marginStart="162dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="155dp"
-        android:layout_marginBottom="20dp"
+        android:layout_marginBottom="5dp"
         android:elevation="10dp"
         android:radius="2dp"
         android:text="Medications"
@@ -50,15 +53,13 @@
         app:layout_constraintTop_toBottomOf="@+id/button4"
         tools:ignore="DuplicateSpeakableTextCheck" />
 
-    <!--Appointments-->
     <Button
         android:id="@+id/button3"
         android:layout_width="200dp"
         android:layout_height="100dp"
         android:layout_marginStart="162dp"
-        android:layout_marginTop="20dp"
         android:layout_marginEnd="155dp"
-        android:layout_marginBottom="100dp"
+        android:layout_marginBottom="200dp"
         android:elevation="10dp"
         android:radius="2dp"
         android:text="Appointments"
@@ -68,5 +69,38 @@
         app:layout_constraintHorizontal_bias="0.528"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button2" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="162dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="155dp"
+        android:layout_marginBottom="40dp"
+        android:elevation="10dp"
+        android:radius="2dp"
+        android:text="Helpful Lists"
+        app:backgroundTint="#009688"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.528"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button2" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="407dp"
+        android:layout_height="73dp"
+        android:layout_marginBottom="40dp"
+        android:background="#E46A6A"
+        android:text="List Categories"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="45sp"
+        app:layout_constraintBottom_toTopOf="@+id/button4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

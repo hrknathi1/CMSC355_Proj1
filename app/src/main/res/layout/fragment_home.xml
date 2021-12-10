@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FDFCDC"
+    tools:context=".ui.fragments.HomeFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/todo_button"
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="103dp"
+            android:layout_marginTop="100dp"
+            android:backgroundTint="#00AFB9"
+            android:text="To-Do-Lists" />
+
+        <Button
+            android:id="@+id/med_button"
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="103dp"
+            android:layout_marginTop="244dp"
+            android:backgroundTint="#FED9B7"
+            android:elevation="10dp"
+            android:radius="2dp"
+            android:text="Medications" />
+
+        <Button
+            android:id="@+id/app_button"
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="103dp"
+            android:layout_marginBottom="125dp"
+            android:backgroundTint="#F07167"
+            android:elevation="10dp"
+            android:radius="2dp"
+            android:text="Appointments" />
+
+    </RelativeLayout>
+
+</FrameLayout>

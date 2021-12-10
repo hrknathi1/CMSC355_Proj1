@@ -9,3 +9,5 @@ Android app to keep track of medical related necessary items in addition to gene
 ## Getting Started :iphone:
 
 ## Technologies :computer:
+* Java
+* Android Studio

@@ -12,10 +12,10 @@
         android:theme="@style/Theme.AndroidAppToDoList"
         android:usesCleartextTraffic="true">
         <activity
-            android:name=".SplashScreen"
+            android:name=".PopActivity"
             android:exported="true" />
         <activity
-            android:name=".MylistsActivity"
+            android:name=".SplashScreen"
             android:exported="true" />
         <activity
             android:name=".BasicListTemp"

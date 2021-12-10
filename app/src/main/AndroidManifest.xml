@@ -12,7 +12,10 @@
         android:theme="@style/Theme.AndroidAppToDoList"
         android:usesCleartextTraffic="true">
         <activity
-            android:name=".QuickNotes"
+            android:name=".SplashScreen"
+            android:exported="true" />
+        <activity
+            android:name=".MylistsActivity"
             android:exported="true" />
         <activity
             android:name=".BasicListTemp"

@@ -1,0 +1,58 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="#FDFCDC"
+android:contextClickable="true"
+tools:context=".ui.SplashScreen">
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Hello World!"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+<TextView
+    android:id="@+id/textView"
+    android:layout_width="292dp"
+    android:layout_height="258dp"
+    android:background="#00afb9"
+    android:fontFamily="sans-serif-condensed"
+    android:text="List-it All"
+    android:textAlignment="center"
+    android:textAppearance="@style/TextAppearance.AppCompat.Display4"
+    android:textColor="#012320"
+    android:textSize="38sp"
+    app:autoSizeTextType="uniform"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.495"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.53" />
+
+
+
+<ImageView
+    android:layout_width="141dp"
+    android:layout_height="125dp"
+    android:background="#FED9B7"
+    android:foreground="@drawable/todolistappicon"
+    android:foregroundTintMode="src_in"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.531"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.106"
+    app:srcCompat="@drawable/ic_baseline_fact_check_24"
+    tools:srcCompat="@drawable/ic_baseline_fact_check_24" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

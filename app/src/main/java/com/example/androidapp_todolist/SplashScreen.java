@@ -27,7 +27,7 @@ public class SplashScreen extends AppCompatActivity {
             @Override
             public void run() {
                 // Updated splashscreen to automatically go to screen with three buttons for the different list types
-                Intent intent = new Intent(SplashScreen.this, MainActivity.class);
+                Intent intent = new Intent(SplashScreen.this, HomeActivity.class);
                 startActivity(intent);
                 finish();
             }

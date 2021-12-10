@@ -18,6 +18,9 @@
             android:name=".MylistsActivity"
             android:exported="true" />
         <activity
+            android:name=".QuickNotes"
+            android:exported="true" />
+        <activity
             android:name=".BasicListTemp"
             android:exported="true" />
         <activity

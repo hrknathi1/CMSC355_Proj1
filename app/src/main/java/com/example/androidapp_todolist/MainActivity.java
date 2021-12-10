@@ -39,28 +39,8 @@ public class   MainActivity extends AppCompatActivity {
 
         getSupportFragmentManager().beginTransaction().replace(R.id.fl_wrapper, new HomeFragment()).commit();
 
-        // NOTE - DUE TO MERGE CONFLICTS/THIS FILE WAS ALTERED, I MOVED THE SPLASHSCREEN TO ITS OWN FILE
-//        // added below to allow 5 seconds for splashscreen to show, then it moves to the next screen
-//        timer = new Timer();
-//        timer.schedule(new TimerTask() {
-//            @Override
-//            public void run() {
-//                Intent intent = new Intent(MainActivity.this, BasicListTemp.class);
-//                startActivity(intent);
-//                finish();
-//            }
-//        }, 5000);
-//
-
     }
 
-    // NOTE - DUE TO MERGE CONFLICTS/THIS FILE WAS ALTERED, I MOVED THE SPLASHSCREEN TO ITS OWN FILE
-//    // added below - this should open a new activity, but may need to correct name of activity (and should update method name/origin of that name)
-//    public void openActivity2() {
-//        Intent intent = new Intent(this, BasicListTemp.class);
-//        startActivity(intent);
-//
-//    }
 
   // Bottom Navigation Bar Method
     private BottomNavigationView.OnNavigationItemSelectedListener bottomNavMethod = new BottomNavigationView.OnNavigationItemSelectedListener() {

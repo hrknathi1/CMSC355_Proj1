@@ -10,7 +10,7 @@
     tools:visibility="visible">
 
     <TextView
-        android:id="@+id/ListsCleaningLists"
+        android:id="@+id/TitleCleaningList"
         android:layout_width="406dp"
         android:layout_height="70dp"
         android:layout_marginBottom="530dp"
@@ -29,31 +29,35 @@
 
     <CheckedTextView
         android:id="@+id/checkedTextView"
-        android:layout_width="322dp"
-        android:layout_height="94dp"
-        android:layout_marginStart="35dp"
-        android:layout_marginTop="55dp"
-        android:layout_marginEnd="54dp"
-        android:layout_marginBottom="40dp"
-        android:text="CheckedTextView"
-        android:textSize="35sp"
-        app:layout_constraintBottom_toTopOf="@+id/RecycleCleanList"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ListsCleaningLists" />
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/RecycleCleanList"
-        android:layout_width="408dp"
-        android:layout_height="300dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginBottom="55dp"
+        android:layout_width="412dp"
+        android:layout_height="496dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="80dp"
         android:background="#FFFFFF"
-        android:visibility="visible"
+        android:text="\n WEEKLY CLEANING LIST:  \n
+- Do Laundry (clothing, towels, shower curtain, bedding, etc.) \n
+- Take Out Trash and Recycling \n
+- Put things away, Tidy, De-clutter and Donate \n
+- Make Bed, Put Laundry Away \n
+- Dust, Clean Windows and Mirrors \n
+- Deep Vacuum, Sweep, Mop Floors \n
+- Wipe Down Appliances, Cabinets, Furniture \n
+- Clean Bathrooms \n
+- Refill all items (salt, pepper, shampoo, body wash, hand soap, etc.) \n
+ \n
+ DAILY CLEANING LIST: \n
+- Scrub kitchen sink, Wipe All Counters \n
+- Load and Unload the Dishwasher \n
+- Light Vacuum and Sweep Floors \n
+- Make Bed \n
+- Do a Load of Laundry \n
+
+        "
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/checkedTextView"
-        tools:visibility="visible" />
+        app:layout_constraintTop_toBottomOf="@+id/TitleCleaningList" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

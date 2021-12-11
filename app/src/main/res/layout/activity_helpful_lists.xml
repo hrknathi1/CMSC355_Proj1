@@ -36,7 +36,7 @@
         android:layout_marginBottom="422dp"
         android:background="#DD7169"
         android:checkable="false"
-        android:text="Cleaning List"
+        android:text="Cleaning Lists"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

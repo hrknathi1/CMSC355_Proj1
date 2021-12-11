@@ -10,7 +10,7 @@ import android.widget.TextView;
 
 public class CleaningLists extends AppCompatActivity {
 
-    CheckedTextView cleaningList;
+  //  CheckedTextView cleaningList;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

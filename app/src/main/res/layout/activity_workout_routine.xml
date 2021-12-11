@@ -4,9 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    tools:context=".WorkoutRoutine">
     android:background="#FDFCDC"
     android:visibility="visible"
-    tools:context=".CleaningLists"
+    tools:context=".WorkoutRoutine"
     tools:visibility="visible">
 
     <TextView
@@ -14,8 +15,8 @@
         android:layout_width="406dp"
         android:layout_height="70dp"
         android:layout_marginBottom="530dp"
-        android:background="#E6756D"
-        android:text="Cleaning Reminders"
+        android:background="#EFC74E"
+        android:text="Workout Routines"
         android:textAlignment="center"
         android:textColor="#5D4037"
         android:textSize="40sp"
@@ -27,31 +28,31 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
 
-    <CheckedTextView
-        android:id="@+id/checkedTextView"
-        android:layout_width="412dp"
-        android:layout_height="496dp"
-        android:layout_marginTop="25dp"
-        android:layout_marginBottom="80dp"
-        android:background="#FFFFFF"
-        android:text="\n WEEKLY CLEANING LIST:  \n
-- Do Laundry (clothing, towels, shower curtain, bedding, etc.) \n
-- Take Out Trash and Recycling \n
-- Put things away, Tidy, De-clutter and Donate \n
-- Make Bed, Put Laundry Away \n
-- Dust, Clean Windows and Mirrors \n
-- Deep Vacuum, Sweep, Mop Floors \n
-- Wipe Down Appliances, Cabinets, Furniture \n
-- Clean Bathrooms \n
-- Refill all items (salt, pepper, shampoo, body wash, hand soap, etc.) \n
- \n
- DAILY CLEANING LIST: \n
-- Scrub kitchen sink, Wipe All Counters \n
-- Load and Unload the Dishwasher \n
-- Light Vacuum and Sweep Floors \n
-- Make Bed \n
-- Do a Load of Laundry \n
-
+        <CheckedTextView
+            android:id="@+id/checkedTextView"
+            android:layout_width="412dp"
+            android:layout_height="496dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="80dp"
+            android:background="#FFFFFF"
+            android:text="\n WEEKLY WORKOUT SPLIT:  \n
+- SUN:   Rest Day \n
+- MON:   Back and Biceps \n
+- TUES:  Legs and Glutes \n
+- WED:   Chest, Triceps, Shoulders \n
+- THUR:  Back and Biceps \n
+- FRI:   Legs and Glutes \n
+- SAT:   Chest, Triceps, Shoulders \n
+\n
+ EXERCISES: \n
+- Biceps: Single Curls, Barbell Curls, Push Ups \n
+- Back:   Reverse Flys, Pull Ups  \n
+- Legs:   Barbell Squats, Lunges, Squats \n
+- Glutes: Hip Thrusts, Romanian Deadlifts \n
+- Chest:  Barbell Press, Inclined Dumbell Press, Chest Flys \n
+- Triceps: Dips, Push Downs  \n
+- Shoulders: Shoulder Press  \n
+\n
         "
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"

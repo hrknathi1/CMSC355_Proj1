@@ -9,33 +9,55 @@ import android.widget.Button;
 
 public class HelpfulLists extends AppCompatActivity {
 
+    // button variables
     Button cleaningList;
+    Button workoutButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_helpful_lists);
 
-        cleaningList = findViewById(R.id.CleaningListsbutton);
+        // buttons by ID
+        cleaningList = findViewById(R.id.cleaningButton);
+        workoutButton = findViewById(R.id.workoutButton);
+
+
         cleaningList.setOnClickListener(new View.OnClickListener() {
-            @Override  // I believe this determines 'what' (aka the text entry box) the "add" button click reacts to
+            @Override
+            // I believe this determines 'what' (aka the text entry box) the "add" button click reacts to
             public void onClick(View v) {
 
-                // Updated splashscreen to automatically go to screen with three buttons for the different list types
                 Intent intent = new Intent(HelpfulLists.this, CleaningLists.class);
                 startActivity(intent);
                 finish();
                 openCleaningList();
             }
 
-        } );
+        });
 
+        workoutButton.setOnClickListener(new View.OnClickListener()   {
+            @Override  // I believe this determines 'what' (aka the text entry box) the "add" button click reacts to
+            public void onClick (View v){
 
-    }
+                Intent intent = new Intent(HelpfulLists.this, WorkoutRoutine.class);
+                startActivity(intent);
+                finish();
+                openWorkoutList();
+            }
+        });
+}
 
-    // added below - this should open a new activity, but may need to correct name of activity (and should update method name/origin of that name)
+    // Opens cleaning list screen
     public void openCleaningList () {
         Intent intent = new Intent(this, CleaningLists.class);
+        startActivity(intent);
+    }
+
+
+    // Opens workout list screen
+    public void openWorkoutList () {
+        Intent intent = new Intent(this, WorkoutRoutine.class);
         startActivity(intent);
     }
 

@@ -12,6 +12,9 @@
         android:theme="@style/Theme.AndroidAppToDoList"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".WorkoutRoutine"
+            android:exported="false" />
+        <activity
             android:name=".CleaningLists"
             android:exported="true" />
         <activity

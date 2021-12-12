@@ -13,7 +13,8 @@
         android:usesCleartextTraffic="true">
         <activity
             android:name=".PopActivity"
-            android:exported="true" />
+            android:exported="true"
+            android:theme="@style/PopUp"/>
         <activity
             android:name=".SplashScreen"
             android:exported="true" />

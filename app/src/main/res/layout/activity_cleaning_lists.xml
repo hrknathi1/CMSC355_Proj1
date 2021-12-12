@@ -12,7 +12,7 @@
     <TextView
         android:id="@+id/TitleWorkoutList"
         android:layout_width="406dp"
-        android:layout_height="70dp"
+        android:layout_height="58dp"
         android:layout_marginBottom="530dp"
         android:background="#E6756D"
         android:text="Cleaning Reminders"
@@ -29,35 +29,162 @@
 
     <CheckedTextView
         android:id="@+id/checkedTextView"
-        android:layout_width="412dp"
-        android:layout_height="496dp"
-        android:layout_marginTop="25dp"
-        android:layout_marginBottom="80dp"
-        android:background="#FFFFFF"
-        android:text="\n  WEEKLY CLEANING LIST:  \n
-  - Do Laundry (clothing, towels, shower curtain, bedding, etc.) \n
-  - Take Out Trash and Recycling \n
-  - Put things away, Tidy, De-clutter and Donate \n
-  - Make Bed, Put Laundry Away \n
-  - Dust, Clean Windows and Mirrors \n
-  - Deep Vacuum, Sweep, Mop Floors \n
-  - Wipe Down Appliances, Cabinets, Furniture \n
-  - Clean Bathrooms \n
-  - Refill all items (salt, pepper, shampoo, body wash, hand soap, etc.) \n
- \n
-  DAILY CLEANING LIST: \n
-  - Scrub kitchen sink, Wipe All Counters \n
-  - Load and Unload the Dishwasher \n
-  - Light Vacuum and Sweep Floors \n
-  - Make Bed \n
-  - Do a Load of Laundry \n
-
-        "
+        android:layout_width="413dp"
+        android:layout_height="32dp"
+        android:background="#FA9992"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="        Cleanning is easier when it's a habit!"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox12" />
+
+    <CheckBox
+        android:id="@+id/checkBox3"
+        android:layout_width="382dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:text="Laundry (clothing, towels, bedding)"
+        android:textAlignment="textStart"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toTopOf="@+id/checkBox4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/TitleWorkoutList" />
+
+    <CheckBox
+        android:id="@+id/checkBox4"
+        android:layout_width="382dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:text="Make Bed, Put Laundry Away"
+        android:textAlignment="textStart"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toTopOf="@+id/checkBox5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox3" />
+
+    <CheckBox
+        android:id="@+id/checkBox5"
+        android:layout_width="382dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:text="Take Out All Trash and Recycle"
+        android:textAlignment="textStart"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toTopOf="@+id/checkBox6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox4" />
+
+    <CheckBox
+        android:id="@+id/checkBox6"
+        android:layout_width="382dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:text="Put things away, Tidy, De-clutter and Donate"
+        android:textAlignment="textStart"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toTopOf="@+id/checkBox7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox5" />
+
+    <CheckBox
+        android:id="@+id/checkBox7"
+        android:layout_width="382dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:text="Dust, Clean Windows and Mirrors"
+        android:textAlignment="textStart"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toTopOf="@+id/checkBox8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox6" />
+
+    <CheckBox
+        android:id="@+id/checkBox8"
+        android:layout_width="382dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:text="Vacuum, Sweep, Mop Floors"
+        android:textAlignment="textStart"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toTopOf="@+id/checkBox9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox7" />
+
+    <CheckBox
+        android:id="@+id/checkBox9"
+        android:layout_width="382dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:text="Clean Bathrooms: Toilet and Tub"
+        android:textAlignment="textStart"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toTopOf="@+id/checkBox10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox8" />
+
+    <CheckBox
+        android:id="@+id/checkBox10"
+        android:layout_width="382dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:text="Scrub Kitchen Sink, Wipe All Counters"
+        android:textAlignment="textStart"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toTopOf="@+id/checkBox11"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox9" />
+
+    <CheckBox
+        android:id="@+id/checkBox11"
+        android:layout_width="382dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:text="Load and Unload Dishwasher"
+        android:textAlignment="textStart"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toTopOf="@+id/checkBox12"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox10" />
+
+    <CheckBox
+        android:id="@+id/checkBox12"
+        android:layout_width="382dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:text="Restock (Q-tips, Salt, Soap, etc.)"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toTopOf="@+id/checkedTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox11" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

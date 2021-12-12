@@ -12,6 +12,7 @@ public class HelpfulLists extends AppCompatActivity {
     // button variables
     Button cleaningList;
     Button workoutButton;
+    Button commonBillsButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,6 +22,7 @@ public class HelpfulLists extends AppCompatActivity {
         // buttons by ID
         cleaningList = findViewById(R.id.cleaningButton);
         workoutButton = findViewById(R.id.workoutButton);
+        commonBillsButton = findViewById(R.id.billsButton);
 
 
         cleaningList.setOnClickListener(new View.OnClickListener() {
@@ -46,7 +48,19 @@ public class HelpfulLists extends AppCompatActivity {
                 openWorkoutList();
             }
         });
-}
+
+        commonBillsButton.setOnClickListener(new View.OnClickListener()   {
+            @Override  // I believe this determines 'what' (aka the text entry box) the "add" button click reacts to
+            public void onClick (View v){
+
+                Intent intent = new Intent(HelpfulLists.this, CommonBills.class);
+                startActivity(intent);
+                finish();
+                openCommonBillList();
+            }
+        });
+
+    }
 
     // Opens cleaning list screen
     public void openCleaningList () {
@@ -58,6 +72,12 @@ public class HelpfulLists extends AppCompatActivity {
     // Opens workout list screen
     public void openWorkoutList () {
         Intent intent = new Intent(this, WorkoutRoutine.class);
+        startActivity(intent);
+    }
+
+    // Opens workout list screen
+    public void openCommonBillList () {
+        Intent intent = new Intent(this, CommonBills.class);
         startActivity(intent);
     }
 

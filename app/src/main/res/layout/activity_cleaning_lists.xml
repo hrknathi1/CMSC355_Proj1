@@ -34,23 +34,23 @@
         android:layout_marginTop="25dp"
         android:layout_marginBottom="80dp"
         android:background="#FFFFFF"
-        android:text="\n WEEKLY CLEANING LIST:  \n
-- Do Laundry (clothing, towels, shower curtain, bedding, etc.) \n
-- Take Out Trash and Recycling \n
-- Put things away, Tidy, De-clutter and Donate \n
-- Make Bed, Put Laundry Away \n
-- Dust, Clean Windows and Mirrors \n
-- Deep Vacuum, Sweep, Mop Floors \n
-- Wipe Down Appliances, Cabinets, Furniture \n
-- Clean Bathrooms \n
-- Refill all items (salt, pepper, shampoo, body wash, hand soap, etc.) \n
+        android:text="\n  WEEKLY CLEANING LIST:  \n
+  - Do Laundry (clothing, towels, shower curtain, bedding, etc.) \n
+  - Take Out Trash and Recycling \n
+  - Put things away, Tidy, De-clutter and Donate \n
+  - Make Bed, Put Laundry Away \n
+  - Dust, Clean Windows and Mirrors \n
+  - Deep Vacuum, Sweep, Mop Floors \n
+  - Wipe Down Appliances, Cabinets, Furniture \n
+  - Clean Bathrooms \n
+  - Refill all items (salt, pepper, shampoo, body wash, hand soap, etc.) \n
  \n
- DAILY CLEANING LIST: \n
-- Scrub kitchen sink, Wipe All Counters \n
-- Load and Unload the Dishwasher \n
-- Light Vacuum and Sweep Floors \n
-- Make Bed \n
-- Do a Load of Laundry \n
+  DAILY CLEANING LIST: \n
+  - Scrub kitchen sink, Wipe All Counters \n
+  - Load and Unload the Dishwasher \n
+  - Light Vacuum and Sweep Floors \n
+  - Make Bed \n
+  - Do a Load of Laundry \n
 
         "
         android:textSize="20sp"

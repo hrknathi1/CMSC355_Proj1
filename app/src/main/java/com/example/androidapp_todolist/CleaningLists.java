@@ -10,16 +10,11 @@ import android.widget.TextView;
 
 public class CleaningLists extends AppCompatActivity {
 
-  //  CheckedTextView cleaningList;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cleaning_lists);
 
-
-//        cleaningList.findViewById(R.id.checkedTextView);
-//        cleaningList.append("Take the trash out");
 
     }
 }

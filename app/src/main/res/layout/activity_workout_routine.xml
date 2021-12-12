@@ -28,14 +28,15 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
 
-        <CheckedTextView
-            android:id="@+id/checkedTextView"
-            android:layout_width="412dp"
-            android:layout_height="496dp"
-            android:layout_marginTop="25dp"
-            android:layout_marginBottom="80dp"
-            android:background="#FFFFFF"
-            android:text="\n  WEEKLY WORKOUT SPLIT:  \n
+    <CheckedTextView
+        android:id="@+id/checkedTextView"
+        android:layout_width="387dp"
+        android:layout_height="528dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="45dp"
+        android:background="#FFFFFF"
+        android:text="         WEEKLY WORKOUT SPLIT:  \n
  - SUN:   Rest Day \n
  - MON:   Back and Biceps \n
  - TUES:  Legs and Glutes \n
@@ -45,20 +46,20 @@
  - SAT:   Chest, Triceps, Shoulders \n
 \n
   EXERCISES: \n
- - Biceps: Single Curls, Barbell Curls, Push Ups \n
- - Back:   Reverse Flys, Pull Ups  \n
- - Legs:   Barbell Squats, Lunges, Squats \n
- - Glutes: Hip Thrusts, Romanian Deadlifts \n
- - Chest:  Barbell Press, Inclined Dumbell Press, Chest Flys \n
- - Triceps: Dips, Push Downs  \n
- - Shoulders: Shoulder Press  \n
+ - Biceps:  Dumbell/Barbell Curls \n
+ - Back:  Reverse Flys, Pull Ups  \n
+ - Legs:  Barbell Squats, Lunges, Squats \n
+ - Glutes:  Hip Thrusts, Romanian Deadlifts \n
+ - Chest:  Chest Press, Chest Flys \n
+ - Triceps:  Dips, Push Downs  \n
+ - Shoulders:  Shoulder Press  \n
 \n
+        Nothing tastes as good as \n
+              fit and healthy feels!
         "
-        android:textSize="20sp"
+        android:textSize="21sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/TitleWorkoutList" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

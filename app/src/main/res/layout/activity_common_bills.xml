@@ -12,9 +12,9 @@
 
     <TextView
         android:id="@+id/TitleCommonBills"
-        android:layout_width="406dp"
-        android:layout_height="70dp"
-        android:layout_marginBottom="530dp"
+        android:layout_width="408dp"
+        android:layout_height="62dp"
+        android:layout_marginBottom="535dp"
         android:background="#7FE9F6"
         android:text="Pay Common Bills"
         android:textAlignment="center"
@@ -28,14 +28,16 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
 
-        <CheckedTextView
-            android:id="@+id/checkedATextView"
-            android:layout_width="412dp"
-            android:layout_height="496dp"
-            android:layout_marginTop="25dp"
-            android:layout_marginBottom="80dp"
-            android:background="#FFFFFF"
-            android:text="\n PAY COMMON BILLS:  \n
+    <CheckedTextView
+        android:id="@+id/checkedATextView"
+        android:layout_width="394dp"
+        android:layout_height="506dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="20dp"
+        android:background="#FFFFFF"
+        android:text="PAY COMMON BILLS:  \n
 - Rent/Mortgage \n
 - Car Payment \n
 - Credit Cards \n
@@ -49,16 +51,19 @@
 - Groceries \n
 - Savings Fund \n
 - Retirement \n
-- Yacht Payment - jk! \n
 - Other/Misc Personal Items \n
+- Yacht Payment - jk! \n
+  ...or not, idk your life \n
 \n
-A dollar saved is a dollar earned!
+A penny saved is a penny earned! \n
+\n
 "
-            android:textSize="20sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/TitleCommonBills" />
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TitleCommonBills"
+        app:layout_constraintVertical_bias="0.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

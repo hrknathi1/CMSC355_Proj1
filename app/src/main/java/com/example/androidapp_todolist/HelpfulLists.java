@@ -38,9 +38,10 @@ public class HelpfulLists extends AppCompatActivity {
 
         });
 
-        workoutButton.setOnClickListener(new View.OnClickListener()   {
-            @Override  // I believe this determines 'what' (aka the text entry box) the "add" button click reacts to
-            public void onClick (View v){
+        workoutButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            // I believe this determines 'what' (aka the text entry box) the "add" button click reacts to
+            public void onClick(View v) {
 
                 Intent intent = new Intent(HelpfulLists.this, WorkoutRoutine.class);
                 startActivity(intent);
@@ -49,9 +50,10 @@ public class HelpfulLists extends AppCompatActivity {
             }
         });
 
-        commonBillsButton.setOnClickListener(new View.OnClickListener()   {
-            @Override  // I believe this determines 'what' (aka the text entry box) the "add" button click reacts to
-            public void onClick (View v){
+        commonBillsButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            // I believe this determines 'what' (aka the text entry box) the "add" button click reacts to
+            public void onClick(View v) {
 
                 Intent intent = new Intent(HelpfulLists.this, CommonBills.class);
                 startActivity(intent);

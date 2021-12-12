@@ -2,9 +2,9 @@ name: Android CI
 
 on:
   push:
-    branches: [ main ]
+    branches: [ brianna_feature ]
   pull_request:
-    branches: [ main ]
+    branches: [ brianna_feature ]
 
 jobs:
   build:

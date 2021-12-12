@@ -12,6 +12,7 @@ public class HomeActivity extends AppCompatActivity {
 
     // added button name for Helpful Lists (pre-filled lists for users to reference)
     Button helpfulLists;
+    Button ToDoList;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,8 +35,29 @@ public class HomeActivity extends AppCompatActivity {
 
         } );
 
+        ToDoList = findViewById(R.id.button4);
+        ToDoList.setOnClickListener(new View.OnClickListener() {
+            @Override
+            // I believe this determines 'what' (aka the text entry box) the "add" button click reacts to
+            public void onClick(View v) {
+
+                Intent intent = new Intent(HomeActivity.this, BasicListTemp.class);
+                startActivity(intent);
+                finish();
+                openBasicListTemp();
+            }
+        });
 
     }
+
+
+    // Opens Basic To Do list (BasicTempList) screen
+    public void openBasicListTemp () {
+        Intent intent = new Intent(this, BasicListTemp.class);
+        startActivity(intent);
+    }
+
+
 
     // added below - this should open a new activity, but may need to correct name of activity (and should update method name/origin of that name)
     public void openHelpfulLists () {

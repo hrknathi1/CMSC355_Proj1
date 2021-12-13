@@ -16,8 +16,8 @@
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
-            android:layout_marginTop="74dp"
-            android:layout_marginEnd="99dp"
+            android:layout_marginTop="64dp"
+            android:layout_marginEnd="85dp"
             android:text="Appointments"
             android:textColor="#F07167"
             android:textSize="35dp" />
@@ -29,10 +29,10 @@
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
             android:layout_marginStart="153dp"
-            android:layout_marginTop="243dp"
+            android:layout_marginTop="284dp"
             android:backgroundTint="#F07167"
             android:text="+"
-            android:textSize="34sp"/>
+            android:textSize="34sp" />
 
     </RelativeLayout>
 

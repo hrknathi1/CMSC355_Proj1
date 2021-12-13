@@ -39,15 +39,15 @@ public class   MainActivity extends AppCompatActivity {
         getSupportFragmentManager().beginTransaction().replace(R.id.fl_wrapper, new HomeFragment()).commit();
 
         // pop-up feature for creating list
-        create_list_btn = (Button) findViewById(R.id.create_list_btn);
+        //create_list_btn = (Button) findViewById(R.id.create_list_btn);
 
-        create_list_btn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent i = new Intent(getApplicationContext(), PopActivity.class);
-                startActivity(i);
-            }
-        });
+        //create_list_btn.setOnClickListener(new View.OnClickListener() {
+          //  @Override
+            //public void onClick(View view) {
+              //  Intent i = new Intent(getApplicationContext(), PopActivity.class);
+                //startActivity(i);
+            //}
+        //});
     }
 
   // Bottom Navigation Bar Method

@@ -52,4 +52,5 @@ dependencies {
     // added implementations
     implementation 'com.google.android.material:material:1.1.0'
     implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    implementation 'androidx.recyclerview:recycleview:1.1.0'
 }

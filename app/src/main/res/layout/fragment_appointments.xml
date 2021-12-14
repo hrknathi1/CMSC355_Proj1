@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FDFCDC"
     tools:context=".ui.fragments.AppointmentsFragment">
 
     <RelativeLayout
@@ -11,10 +12,28 @@
         android:layout_height="match_parent">
 
         <TextView
+            android:id="@+id/appointmentText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
-            android:text="Appointments" />
+            android:textStyle="bold"
+            android:text="Appointments"
+            android:textColor="#F07167"
+            android:layout_marginStart= "16dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp"/>
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="32dp"
+            android:backgroundTint="#F07167"
+            android:text="Add"
+            android:src="@drawable/ic_baseline_add_24"/>
+
 
     </RelativeLayout>
 

@@ -21,8 +21,8 @@
             android:textColor="#F07167"
             android:layout_marginStart= "16dp"
             android:layout_marginBottom="16dp"
-            android:layout_marginTop="16dp"
-            android:testSize="32sp"/>
+            android:layout_marginTop="16dp"/>
+
         <androidx.recyclerview.widget.RecyclerView
             xmlns:app="http://schemas.android.com/apk/res-auto"
             android:id="@+id/appointmentRecyclerView"
@@ -30,8 +30,8 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/appointmentText"
             app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-            android:nestScrollEnabled="true"
             />
+
         <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

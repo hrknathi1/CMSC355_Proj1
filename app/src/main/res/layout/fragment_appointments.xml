@@ -16,7 +16,11 @@
             android:layout_centerInParent="true"
             android:textStyle="bold"
             android:text="Appointments"
-            android:textColor="#F07167" />
+            android:textColor="#F07167"
+            android:layout_marginStart= "16dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp"
+            android:testSize="32sp"/>
 
     </RelativeLayout>
 
